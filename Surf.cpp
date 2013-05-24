@@ -36,6 +36,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		//Read a frame from video capture
 		//And move it to previous frame
+		lastFrame = null;
 		lastFrame = frame.clone();
 		capture>>frame;
 		if(lastFrame.empty())
